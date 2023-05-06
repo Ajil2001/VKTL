@@ -1,0 +1,185 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Webpage</title>
+	<style type="text/css">
+		/*Header CSS*/
+		.header{
+			background-color: black;
+			color: white;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+			text-align: center;
+			padding: 20px;
+			transition: ease-in-out 0.5s;
+		}
+		.header.sticky{
+			padding: 10px;
+			background-color: rgba(0,0,0,0.8);
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+		}
+		.header h1{
+			margin: 0;
+			font-size: 28px;
+		}
+		.header p{
+			margin: 0;
+			font-size: 18px;
+		}
+		/*About us box CSS*/
+		.about{
+			background-color: white;
+			margin: 50px auto;
+			padding: 20px;
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+			max-width: 800px;
+			text-align: center;
+		}
+		.about h2{
+			font-size: 24px;
+			margin-top: 0;
+		}
+		.about p{
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 20px 0;
+		}
+		/*Partner box CSS*/
+		.partner{
+			background-color: white;
+			margin: 50px auto;
+			padding: 20px;
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+			max-width: 800px;
+			text-align: center;
+		}
+		.partner h2{
+			font-size: 24px;
+			margin-top: 0;
+		}
+		.partner .frame{
+			display: inline-block;
+			margin: 20px;
+			border: 2px solid black;
+			border-radius: 50%;
+			overflow: hidden;
+			width: 100px;
+			height: 100px;
+		}
+		.partner .frame img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		/*Responsive CSS*/
+		@media(max-width: 768px){
+			.about, .partner{
+				margin: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+  <script>
+
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?93664';
+
+    var s = document.createElement('script');
+
+    s.type = 'text/javascript';
+
+    s.async = true;
+
+    s.src = url;
+
+    var options = {
+
+  "enabled":true,
+
+  "chatButtonSetting":{
+
+      "backgroundColor":"#4dc247",
+
+      "ctaText":"Chat with us",
+
+      "borderRadius":"25",
+
+      "marginLeft":"0",
+
+      "marginBottom":"50",
+
+      "marginRight":"50",
+
+      "position":"right"
+
+  },
+
+  "brandSetting":{
+
+      "brandName":"WATI",
+
+      "brandSubTitle":"Typically replies within a day",
+
+      "brandImg":"",
+
+      "welcomeText":"Hi there!\nHow can I help you?",
+
+      "messageText":"",
+
+      "backgroundColor":"#0a5f54",
+
+      "ctaText":"Start Chat",
+
+      "borderRadius":"25",
+
+      "autoShow":false,
+
+      "phoneNumber":"917012700945"
+
+  }
+
+};
+
+    s.onload = function() {
+
+        CreateWhatsappChatWidget(options);
+
+    };
+
+    var x = document.getElementsByTagName('script')[0];
+
+    x.parentNode.insertBefore(s, x);
+
+</script>
+	<header class="header">
+		<p>Mail@vktldelivery@gmail.com | Phone: +91 7012700945</p>
+	</header>
+
+	<div class="main">
+		<div class="logo">
+			<img src="logo.png" alt="Logo">
+		</div>
+
+		<div class="about">
+			<h2>About Us</h2>
+			<p>VKTL international courier and Air cargo service is the fastest-growing company from Kerala to offer services in the field of logistics/ freight forwarding, packing and pick up and import customs clearance. Offering a wide range of international and Domestic freight forwarding services since 2018. We have a tie-up with DHL, FedEx, UPS, and Aramex from Kerala for your various international courier needs.
+
+</p>
+		</div>
+
+		<div class="partner">
+			<h2>Our Partners</h2>
+			<div class="frame">
+				<img src="partner1.png" alt="Partner 1">
+			</div><div class="frame">
+				<img src="partner1.png" alt="Partner 1">
+			</div><div class="frame">
+				<img src="partner1.png" alt="Partner 1">
+			</div><div class="frame">
+				<img src="partner1.png" alt="Partner 1">
+			</div>
